@@ -14,23 +14,31 @@
 	           this.year = year;
 	       }//costructor
 	       
+	       public Student(String firstName, String lastName) {
+	    	    this.firstName = firstName;
+	    	    this.lastName = lastName;
+	    	}//costructor
+	       
 	       
 	       public void printFullName() {
 	    	     System.out.println(firstName + " " + lastName);
-	    	 }
+	    	 }//FulName
 	      
 	       public boolean isApproved() {
 	           return grade >= 60;
-	       }
+	          
+	       }//isApproved
 
 	       
-	       public int changeYearIfApproved(int grade, int year) {
+	       public int changeYearIfApproved() {
 	           if (grade >= 60) {
 	               year = year + 1;
 	               System.out.println("Congratulations!");
 	           }
 	           return year;
-	       }
+	       }//changeYearIf
+	       
+
 	       
  }//class student
  
